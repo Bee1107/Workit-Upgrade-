@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "485425989180",
+    "project_id": "workit-test-f1f92",
+    "storage_bucket": "workit-test-f1f92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485425989180:android:4111543e07b0d0e6656539",
+        "android_client_info": {
+          "package_name": "com.blueprint.workit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485425989180-1rj648d96hg325hnipd1kln7at44dnd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcP67mJ61vncyptiukDA8rJkC8eAZUj50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485425989180-0h4r4srehdmjik50no0g49liru1un2pd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "485425989180-hssesjqd6b834mdljkh9l9ehgp0kbvs5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blueprint.workit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485425989180:android:4c0e0819bec09e50656539",
+        "android_client_info": {
+          "package_name": "com.newversion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485425989180-1rj648d96hg325hnipd1kln7at44dnd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcP67mJ61vncyptiukDA8rJkC8eAZUj50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485425989180-0h4r4srehdmjik50no0g49liru1un2pd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "485425989180-hssesjqd6b834mdljkh9l9ehgp0kbvs5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blueprint.workit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
