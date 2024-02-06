@@ -36,7 +36,6 @@ local.properties
 
 # node.js
 #
-node_modules/
 npm-debug.log
 yarn-error.log
 
@@ -47,6 +46,7 @@ yarn-error.log
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
+/node_modules
 **/fastlane/report.xml
 **/fastlane/Preview.html
 **/fastlane/screenshots

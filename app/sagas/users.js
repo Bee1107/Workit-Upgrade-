@@ -53,6 +53,7 @@ function* signupUser(action) {
 
       const image = yield select(state => state.signup.image)
 
+
       if(image === null){
          yield put({type: SIGNUP.ERROR, message: 'NOT_IMAGE' })
          yield cancel()
@@ -67,11 +68,13 @@ function* signupUser(action) {
          password,
          nationality } = action.data
       
-
+      
   
-      const profile_picture = yield call(uploadImageToStorage, getPlatformPath(image).value, `profile_images/${getFileName(image.fileName, getPlatformPath(image).value)}`)
+      const profile_picture = yield call(uploadImageToStorage, getPlatformPath(image["assets"][0]).value, `profile_images/${getFileName(image["assets"][0].fileName, getPlatformPath(image["assets"][0]).value)}`)
 
  
+      console.log(name, father_last_name, mother_last_name, contact_number,email, password, nationality, profile_picture, fcm_token);
+      
       const response = yield call(signup, {
          name,
          father_last_name,
@@ -271,8 +274,6 @@ function* fetchUserProfile(action){
       yield put({ type: USER_PROFILE.GET.SUCCESS, data: {...user._data, userId: action.data.userId } })
 
    }catch(e){
-
-      console.log('error', e)
       yield put({ type: USER_PROFILE.GET.ERROR })
    }
 }

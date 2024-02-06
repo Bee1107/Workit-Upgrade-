@@ -195,7 +195,7 @@ const HomeTabScreen = () => (
 )
 
 const SignupStackScreen = () =>  (
-  <SignupStack.Navigator mode="card">
+  <SignupStack.Navigator screenOptions="card">
     <SignupStack.Screen name="MainHome" options={{headerShown: false}} component={MainScreen} />
     <SignupStack.Screen name="Terms" options={{ header: props => <Header {...props} title="Términos y Condiciones"  />}} component={TermsScreen} />
     <SignupStack.Screen name="Signup" options={{headerTransparent:true, header: props => <Header {...props} title="" isTransparent={true}  />}} component={SignupScreen} />
@@ -254,7 +254,7 @@ const Root = () => {
         onReady={onReady}
         onStateChange={onStateChange}
         >
-        <RootStack.Navigator mode="modal" >
+        <RootStack.Navigator presentation="modal" >
           <RootStack.Screen options={options} component={SplashScreen} name="Splash" />
           <RootStack.Screen name="Auth" options={options}  component={SignupStackScreen} />
           <RootStack.Screen name="Main" options={options} component={HomeTabScreen} />

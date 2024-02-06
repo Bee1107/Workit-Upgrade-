@@ -9,7 +9,7 @@ export const NOTIFCATION_HEADERS = {
 
 export const NOTIFICATION_API_URL = 'https://fcm.googleapis.com/fcm/send'
 
-export const BASE_URL = 'https://us-central1-workit-de544.cloudfunctions.net/app/api/'
+export const BASE_URL = 'https://us-central1-workit-test-f1f92.cloudfunctions.net/app/api/'
 
 export const MAPBOX_TOKEN = 'pk.eyJ1IjoidHJhbnNtaWdyYWRvIiwiYSI6ImNqb2s1d2M5azBjbHUzd21oNTlkNG10aDUifQ.M-QgjU7VUoR7Q8d2Sf2uLA'
 

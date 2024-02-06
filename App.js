@@ -157,7 +157,7 @@ const App = () => {
           }, 1000)
          
         }
-        setLoading(false);
+        // setLoading(false);
       });
   }, []);
 

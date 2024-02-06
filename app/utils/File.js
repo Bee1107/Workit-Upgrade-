@@ -2,6 +2,7 @@ import storage from '@react-native-firebase/storage'
 import { Platform } from 'react-native'
 
 export const uploadImageToStorage = (path, name) => {
+    console.log(path, name);
     const reference = storage().ref(name)
     return reference.putFile(path)
         .then(() => 

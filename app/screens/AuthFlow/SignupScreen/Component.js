@@ -46,6 +46,8 @@ const SignupScreen = ({ signup, isLoading, push, image }) => {
     
     }
 
+    const actionSheet = useRef(null)
+
     const pickerAvatar = () => {
         if(actionSheet !== null){
             actionSheet.current.show()
@@ -60,9 +62,6 @@ const SignupScreen = ({ signup, isLoading, push, image }) => {
          
         }
     }
-
-    const actionSheet = useRef(null)
-
 
     const selectCamera = () => {
 
@@ -137,7 +136,7 @@ const SignupScreen = ({ signup, isLoading, push, image }) => {
             <View style={{alignItems:'center', paddingTop: 110, paddingBottom: 20}}>
                 <AvatarPicker
                      showEdit={true} 
-                     url={((image) ? image.uri : null )} 
+                     url={((image) ? image["assets"][0].uri : null )} 
                      onPress={pickerAvatar} 
                      isCached={false}
                 />
